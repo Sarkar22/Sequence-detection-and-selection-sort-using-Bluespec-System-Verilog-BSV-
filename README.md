@@ -1,6 +1,7 @@
 # Sequence-detection-and-selection-sort-using-Bluespec-System-Verilog-BSV-
 The purpose is to implement a sequence detector algorithm and a selection sort algorithm using BSV.
 
+### Sequence Detector Algorithm: 
 Here we are taking a 32 bit input stream. We are going to search through it, in order to find the
 desired pattern.
 The input bitstream we have taken is:
