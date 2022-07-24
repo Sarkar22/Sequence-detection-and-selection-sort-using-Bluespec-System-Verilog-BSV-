@@ -24,8 +24,7 @@ module mkSeqDet (SequenceDetect);
    // ------------------------------------------------------------
    // Submodules
    // The only submodules you require in this model are registers.
-   // Instantiate all the registers you will need. I have added
-   // the first one as an example
+   
 
    // rg_busy is a register which holds a Bool value and is reset
    // to False
@@ -36,21 +35,9 @@ module mkSeqDet (SequenceDetect);
    Reg #(Bit#(32)) rg_number_of_seq <- mkReg(0);      // output 
    Reg #(Bit#(5)) index_of_bitstream <- mkReg(31);                 // position/index in the input array
 
-   /* What other submodules do you require in this module? */
 
    // ------------------------------------------------------------
-   // Rules -- define your rule(s) here. Before writing the rule
-   // you need to answer the following questions:
-   //
-   // 1. Under what condition will the rule execute -- this
-   // becomes the explicit or outer condition of the rule
-   //
-   // 2. What all actions will you do under that conditon? These
-   // will be become statements inside the rule body. Refer to
-   // Lec2 on how to write to registers.
-   //
-   // 3. Are some of the actions guarded by conditions inside the
-   // rule? These become ifs guarding the actions
+   // Rules -- rule needs to be defined.
    
     rule detectSequence  (rg_busy == True);
 		if (p[index_of_bitstream : index_of_bitstream-3] == rg_seq)
