@@ -9,4 +9,5 @@ We are looking for the pattern “1010”. This pattern can be overlapping. If w
 
 
 The terminal view is:
+
 ![seq_detect](https://github.com/Sarkar22/Sequence-detection-and-selection-sort-using-Bluespec-System-Verilog-BSV-/blob/main/seq_detect.PNG)
